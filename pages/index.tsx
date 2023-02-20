@@ -3,7 +3,7 @@ import styles from '../styles/Home.module.scss';
 import { GetStaticProps } from 'next';
 import { ISocial } from '../interfaces';
 import { FC } from 'react';
-// import Socials from '../components/Socials';
+import Socials from '../components/Socials';
 
 export const getStaticProps: GetStaticProps = async () => {
   try {
@@ -37,7 +37,7 @@ const Home: FC<IHomeProps> = ({ socials }) => {
         <title>Home</title>
       </Head>
       <h1>Next.js Project</h1>
-      {/* <Socials socials={socials} /> */}
+      <Socials socials={socials} />
     </div>
   );
 };
