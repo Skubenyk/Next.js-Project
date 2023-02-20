@@ -16,7 +16,7 @@ export const socials = [
   },
   {
     id: 4,
-    icon: 'gmail',
-    path: 'mailto:skubenik@gmail.com',
+    icon: 'facebook',
+    path: 'https://www.facebook.com/profile.php?id=100003708146006',
   },
 ];
