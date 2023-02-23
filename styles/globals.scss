@@ -12,19 +12,19 @@ body {
 }
 
 #__next {
-  grid-auto-rows: auto 1fr auto;
+  grid-auto-rows: 100px auto 1fr auto;
   min-height: 100vh;
   display: grid;
 }
 
 main {
-  padding: 20px;
   height: 1500px;
+  padding: 20px;
 }
 
 header,
 footer {
-  min-height: 80px;
+  height: 80px;
 }
 
 header {
@@ -48,6 +48,7 @@ footer {
   justify-content: center;
   align-items: center;
   text-align: center;
+  margin-top: 40px;
   font-size: 12px;
   display: flex;
 }
@@ -59,4 +60,20 @@ a {
 
 .youtubeImg {
   margin: 0 auto;
+}
+
+h1 {
+  margin-left: 20px;
+}
+
+h3 {
+  margin-left: 40px;
+}
+
+p {
+  margin-left: 20px;
+}
+
+div strong {
+  margin-left: 20px;
 }

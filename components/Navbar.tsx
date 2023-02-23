@@ -1,4 +1,4 @@
-// import { useRouter } from 'next/router';
+import { useRouter } from 'next/router';
 import styles from '../styles/Navbar.module.scss';
 import Link from 'next/link';
 import Image from 'next/image';
@@ -12,7 +12,7 @@ const navigation = [
 ];
 
 const Navbar: FC = () => {
-  // const { pathname } = useRouter();
+  const { pathname } = useRouter();
 
   return (
     <nav className={styles.nav}>
@@ -22,7 +22,7 @@ const Navbar: FC = () => {
       <div className={styles.links}>
         {navigation.map(({ id, title, path }) => (
           <Link
-            // className={pathname === path ? styles.active : null}
+            className={pathname === path ? styles.active : null}
             key={id}
             href={path}
           >
